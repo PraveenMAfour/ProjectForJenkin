@@ -21,12 +21,12 @@ public class SeleniumWrapper {
 	{
 		if(browserName.toLowerCase().equals("chrome"))
 		{
-			System.setProperty("webdriver.chrome.driver", currentDir+"./drivers/chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver",currentDir+"/drivers/chromedriver.exe");
 			driver = new ChromeDriver();
 		}
 		else if(browserName.toLowerCase().equals("ie"))
 		{
-			System.setProperty("webdriver.ie.driver", currentDir+"./drivers/IEDriverServer.exe");
+			System.setProperty("webdriver.ie.driver", currentDir+"/drivers/IEDriverServer.exe");
 			driver = new InternetExplorerDriver();
 		}
 		else

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- WARNING: Eclipse auto-generated file.
+              Any modifications will be overwritten.
+              To include a user specific buildfile here, simply create one in the same
+              directory with the processing instruction <?eclipse.ant.import?>
+              as the first entry and export the buildfile again. -->
+	<project basedir="." default="run-tests" name="DemoTest">
+    <property name="classes.dir" value="${basedir}/bin" />
+   <property name="src.dir" value="${basedir}/src" />
+   <property name="lib.dir" value="${basedir}/lib"/>
+   <property name="testng.report.dir" value="${basedir}/test-output"/>
+
+    <path id="DemoTest.classpath">
+        <pathelement location="bin"/>
+        <pathelement location="lib/selenium-server-standalone-2.47.1.jar"/>
+        <pathelement location="lib/testng-6.7.jar"/>
+        <pathelement location="C:/Users/praveen.m/Downloads/phantomjsdriver-1.1.0.jar"/>
+    </path>
+	<target name="init">
+	<echo>Java version: ${ant.java.version}</echo>
+	<delete dir="${classes.dir}" />
+	<mkdir dir="${classes.dir}"/>
+	</target>
+    <target name="compile" depends="init">
+          <javac srcdir="${src.dir}" destdir="${classes.dir}" fork="true" includeantruntime="false">
+          <classpath refid="DemoTest.classpath"/>
+    	</javac>
+    </target>
+              	
+    <taskdef resource="testngtasks" classpath="${lib.dir}/testng-6.7.jar"/>
+	
+    <target name="run-tests" depends="compile">
+       <testng classpathref="DemoTest.classpath"  outputDir="${testng.report.dir}" workingDir="${basedir}" haltOnfailure="true">
+       		<xmlfileset dir="${basedir}" includes="TestNg.xml"/>
+       </testng>
+    </target>
+</project>
