@@ -5,6 +5,7 @@
               directory with the processing instruction <?eclipse.ant.import?>
               as the first entry and export the buildfile again. -->
 	<project basedir="." default="run-tests" name="DemoTest">
+	<property environment="env" /> 
     <property name="classes.dir" value="${basedir}/bin" />
    <property name="src.dir" value="${basedir}/src" />
    <property name="lib.dir" value="${basedir}/lib"/>
