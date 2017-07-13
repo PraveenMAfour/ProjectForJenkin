@@ -1,5 +1,6 @@
 package com.demoaut.newtours.scripts;
 
+
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Parameters;
