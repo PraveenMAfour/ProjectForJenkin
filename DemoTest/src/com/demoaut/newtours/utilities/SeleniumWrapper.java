@@ -6,6 +6,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.openqa.selenium.phantomjs.PhantomJSDriver;
 import org.openqa.selenium.support.ui.Select;
 
 /*
@@ -28,6 +29,10 @@ public class SeleniumWrapper {
 		{
 			System.setProperty("webdriver.ie.driver", currentDir+"/drivers/IEDriverServer.exe");
 			driver = new InternetExplorerDriver();
+		}
+		else if(browserName.toLowerCase().equals("phantomjs"))
+		{
+			driver = new PhantomJSDriver();
 		}
 		else
 		{

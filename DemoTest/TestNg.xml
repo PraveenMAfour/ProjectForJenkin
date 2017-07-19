@@ -1,7 +1,7 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 <!-- Provide browserName as ie, chrome or firefox -->
 <suite name="Mercury Tours Test">
-	<parameter name="browserName" value="chrome" />
+	<parameter name="browserName" value="phantomjs" />
 	<test name="New-User-Regsitration-And-Login">
 		<parameter name="URL" value="http://newtours.demoaut.com" />
 		<classes>
