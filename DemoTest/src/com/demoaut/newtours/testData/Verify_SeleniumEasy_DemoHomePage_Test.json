@@ -1,0 +1,7 @@
+{
+	"board1Name" : "welcome",
+	"board2Name" : "Basic",
+	"board3Name" : "Intermediate",
+    "board4Name" : "Advanced",
+    "board5Name" : "completed"
+}

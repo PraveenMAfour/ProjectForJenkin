@@ -8,4 +8,11 @@
 			<class name="com.demoaut.newtours.scripts.New_User_Registration_And_Login_Test" />
 		</classes>
 	</test>
+	
+	<test name="SeleniumEasy_TestHomePage">
+		<parameter name="URL" value="http://www.seleniumeasy.com/test" />
+		<classes>
+			<class name="com.demoaut.newtours.scripts.Verify_SeleniumEasy_DemoHomePage_Test" />
+		</classes>
+	</test>
 </suite>
