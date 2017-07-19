@@ -1,0 +1,26 @@
+{
+  "name": "Suite1",
+  "defaultJobData": {
+    "testngFile": "TestNg.xml",
+    "mavenPomFile": "DemoTest/pom.xml",
+    "git": {
+      "url": "https://github.com/PraveenMAfour/ProjectForJenkin.git",
+      "branch": "${SUITE1_GIT_BRANCH}"
+    },
+    "userParameters": [
+      {
+        "name": "SUITE1_GIT_BRANCH",
+        "defaultValue": "OnlyMaven",
+        "description": ""
+      }
+    ]
+  },
+  "testJobs": [
+    {
+      "name" : "New-User-Regsitration-And-Login"             
+    },
+    {
+      "name" : "SeleniumEasy_TestHomePage"
+    }              
+  ]
+}
