@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hudson.plugins.view.dashboard.Dashboard plugin="dashboard-view@2.9.6">
+    <name>[view_name]</name>
+    <filterExecutors>false</filterExecutors>
+    <filterQueue>false</filterQueue>
+    <properties class="hudson.model.View$PropertyList"/>
+    <jobNames>
+        <comparator class="hudson.util.CaseInsensitiveComparator"/>
+    </jobNames>
+    <jobFilters/>
+    <columns>
+        <hudson.views.StatusColumn/>
+        <hudson.views.WeatherColumn/>
+        <hudson.views.JobColumn/>
+        <hudson.views.LastSuccessColumn/>
+        <hudson.views.LastFailureColumn/>
+        <hudson.views.LastDurationColumn/>
+        <hudson.views.BuildButtonColumn/>
+    </columns>
+    <includeRegex>[include_jobs_regex]</includeRegex>
+    <recurse>false</recurse>
+    <useCssStyle>false</useCssStyle>
+    <includeStdJobList>false</includeStdJobList>
+    <leftPortletWidth>50%</leftPortletWidth>
+    <rightPortletWidth>50%</rightPortletWidth>
+    <leftPortlets/>
+    <rightPortlets/>
+    <topPortlets>
+        <hudson.plugins.view.dashboard.test.TestStatisticsPortlet>
+            <id>dashboard_portlet_9361</id>
+            <name>Test Statistics Grid</name>
+            <useBackgroundColors>false</useBackgroundColors>
+            <skippedColor>FDB813</skippedColor>
+            <successColor>339900</successColor>
+            <failureColor>E86850</failureColor>
+        </hudson.plugins.view.dashboard.test.TestStatisticsPortlet>
+        <hudson.plugins.view.dashboard.core.HudsonStdJobsPortlet>
+            <id>dashboard_portlet_30046</id>
+            <name>Jenkins jobs list</name>
+        </hudson.plugins.view.dashboard.core.HudsonStdJobsPortlet>
+    </topPortlets>
+    <bottomPortlets/>
+</hudson.plugins.view.dashboard.Dashboard>

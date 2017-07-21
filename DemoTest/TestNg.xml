@@ -15,4 +15,12 @@
 			<class name="com.demoaut.newtours.scripts.Verify_SeleniumEasy_DemoHomePage_Test" />
 		</classes>
 	</test>
+	
+	<test name="CreateRegressionSuite">
+		<parameter name="URL" value="http://www.seleniumeasy.com/test" />
+		<classes>
+			<class name="com.demoaut.newtours.utilities.jenkins.SuitesManagementTask" />
+		</classes>
+	</test>
+	
 </suite>
